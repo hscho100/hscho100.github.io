@@ -207,8 +207,6 @@ defaults:
     values:
       layout: article
       nav_key: docs
-      sidebar:
-        nav: docs-en
       sharing: true
       license: true
       aside:
