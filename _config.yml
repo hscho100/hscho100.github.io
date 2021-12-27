@@ -24,7 +24,8 @@ title   : My First Github io Blogs
 description: > # this means to ignore newlines until "Language & timezone"
   Math and etc.
 
-
+sidebar:
+  nav: docs-en
 ## => Language and Timezone
 ##############################
 lang: en # the language of your site, default as "en"
