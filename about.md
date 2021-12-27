@@ -23,6 +23,10 @@ titles:
   fr-FR   : *FR
   fr-LU   : *FR
   # @end locale config
+aside:
+  toc: true
+sidebar:
+  nav: layouts
 key: page-about
 ---
 
