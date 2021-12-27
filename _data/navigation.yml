@@ -5,15 +5,33 @@ docs-en:
         url:    /docs/en/quick-start
       - title:  Structure
         url:    /docs/en/structure
-      ...
+      - title:  Update from 1.x to 2.x
+        url:    /docs/en/update-from-1-to-2
   - title:      Customization
     children:
       - title:  Configuration
         url:    /docs/en/configuration
       - title:  Navigation
         url:    /docs/en/navigation
-      ...
-      
+      - title:  Layouts
+        url:    /docs/en/layouts
+      - title:  Logo and Favicon
+        url:    /docs/en/logo-and-favicon
+      - title:  Authors
+        url:    /docs/en/authors
+      - title:  Internationalization
+        url:    /docs/en/i18n
+  - title:      Content
+    children:
+      - title:  Writing Posts
+        url:    /docs/en/writing-posts
+      - title:  Additional Styles
+        url:    /docs/en/additional-styles
+      - title:  Extensions
+        url:    /docs/en/extensions
+      - title:  Markdown Enhancements
+        url:    /docs/en/markdown-enhancements
+        
 header:
   - titles:
       # @start locale config
