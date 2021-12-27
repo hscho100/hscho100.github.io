@@ -131,7 +131,7 @@ comments:
     repository  : hscho100.github.io # GitHub repo
     owner       : hscho100 # GitHub repo owner
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      hscho100 # - your GitHub Id
+      - hscho100 # - your GitHub Id
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
