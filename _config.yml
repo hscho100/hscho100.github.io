@@ -130,8 +130,8 @@ comments:
     clientSecret: ae4611df3981edfa8c1cda8dc93ff60cc0a50c2f # GitHub Application Client Secret
     repository  : hscho100.github.io # GitHub repo
     owner       : hscho100 # GitHub repo owner
-    admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      - hscho100@snu.ac.kr # - your GitHub Id
+    admin: ['hscho100'] # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
+      # - your GitHub Id
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
