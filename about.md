@@ -26,7 +26,7 @@ titles:
 aside:
   toc: true
 sidebar:
-  nav: layouts
+  nav: docs-en
 key: page-about
 ---
 
