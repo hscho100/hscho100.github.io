@@ -24,8 +24,6 @@ title   : My First Github io Blogs
 description: > # this means to ignore newlines until "Language & timezone"
   Math and etc.
 
-sidebar:
-  nav: docs-en
 ## => Language and Timezone
 ##############################
 lang: en # the language of your site, default as "en"
@@ -89,10 +87,10 @@ mathjax: true # true (default), true
 mathjax_autoNumber: true # true (default), true
 
 ## Mermaid
-mermaid: # false (default), true
+mermaid: true # false (default), true
 
 ## Chart
-chart: # false (default), true
+chart: true # false (default), true
 
 
 ## => Paginate
@@ -119,7 +117,7 @@ sharing:
 ## => Comments
 ##############################
 comments:
-  provider: disqus # false (default), "disqus", "gitalk", "valine", "custom"
+  provider: gitalk # false (default), "disqus", "gitalk", "valine", "custom"
 
   ## Disqus
   disqus:
@@ -128,12 +126,12 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : # GitHub Application Client ID
-    clientSecret: # GitHub Application Client Secret
-    repository  : # GitHub repo
-    owner       : # GitHub repo owner
+    clientID    : d84d180e99f302e7df37 # GitHub Application Client ID
+    clientSecret: ae4611df3981edfa8c1cda8dc93ff60cc0a50c2f # GitHub Application Client Secret
+    repository  : hscho100.github.io # GitHub repo
+    owner       : hscho100 # GitHub repo owner
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      # - your GitHub Id
+      hscho100 # - your GitHub Id
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
@@ -208,6 +206,9 @@ defaults:
       type: posts
     values:
       layout: article
+      nav_key: docs
+      sidebar:
+        nav: docs-zh
       sharing: true
       license: true
       aside:
