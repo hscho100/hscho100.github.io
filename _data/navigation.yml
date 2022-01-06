@@ -60,7 +60,7 @@ header:
 
   - titles:
       # @start locale config
-      en      : &EN       About
+      en      : &EN       Test! What About?
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
