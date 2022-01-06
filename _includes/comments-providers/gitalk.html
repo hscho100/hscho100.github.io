@@ -14,7 +14,7 @@
 
 	{%- include snippets/get-sources.html -%}
 	{%- assign _sources = __return -%}
-	<div class="gitalk-wrapper" id="gitalk-container"></div>
+	<div class="gitalk-wrapper" id="js-gitalk-container"></div>
 	{%- assign _admin = '' -%}
 	{%- for _admin_id in site.comments.gitalk.admin -%}
 		{%- assign _admin = _admin | append: ", '" | append: _admin_id | append: "'" -%}
@@ -33,7 +33,7 @@
 				id: '{{ page.key }}',
         proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
 			});
-			gitalk.render('gitalk-container');
+			gitalk.render('js-gitalk-container');
 		});
 	</script>
 
