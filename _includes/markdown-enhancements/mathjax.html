@@ -10,7 +10,7 @@
 		inlineMath: [['$','$'], ['\\(','\\)']]
 	}};
 	{%- if _mathjax_autoNumber == true -%}
-		_config.TeX = { equationNumbers: { autoNumber: "all" } };
+		_config.TeX = { equationNumbers: { autoNumber: "AMS" } };
 	{%- endif -%}
 	MathJax.Hub.Config(_config);
 </script>
