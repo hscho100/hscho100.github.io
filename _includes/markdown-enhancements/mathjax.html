@@ -6,12 +6,11 @@
 {%- assign _mathjax_autoNumber = __return -%}
 
 <script type="text/x-mathjax-config">
-	var _config = { tex2jax: {
+	var _config = { tex2jax: { packages: ['base', 'ams'],
 		inlineMath: [['$','$'], ['\\(','\\)']]
 	}};
 	{%- if _mathjax_autoNumber == true -%}
-		_config.TeX = { equationNumbers: { autoNumber: "all" },
-                    packages: ['base', 'ams'] };
+		_config.TeX = { equationNumbers: { autoNumber: "all" }};
 	{%- endif -%}
 	MathJax.Hub.Config(_config);
 </script>
