@@ -31,8 +31,11 @@ docs-en:
         url:    /docs/en/extensions
       - title:  Markdown Enhancements
         url:    /docs/en/markdown-enhancements
-        
+
 header:
+  - title:      Docs
+    url:        /docs/en/quick-start
+    key:        docs
   - titles:
       # @start locale config
       en      : &EN       Archive
