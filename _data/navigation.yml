@@ -1,8 +1,4 @@
 header:
-  - title:      Docs
-    url:        /docs/en/quick-start
-    key:        docs
-    
   - titles:
       # @start locale config
       en      : &EN       Archive
