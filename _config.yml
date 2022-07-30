@@ -198,6 +198,7 @@ exclude:
   - /node_modules
   - /screenshots
   - /test
+  - /docs
   - /vendor
 
 defaults:
