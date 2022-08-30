@@ -101,7 +101,7 @@ paginate_path: /page:num # don't change this unless for special need
 
 ## => Sources
 ##############################
-sources: # bootcdn (default), unpkg
+sources: unpkg # bootcdn (default), unpkg
 
 
 ## => Sharing
@@ -200,17 +200,6 @@ exclude:
   - /test
   - /docs
   - /vendor
-
-collections_dir: _docs
-collections:
-  docs:
-    output: true
-  sample_page:
-    output: true
-  sample_articles:
-    output: true
-  sample_languages:
-    output: true
 
 defaults:
   - scope:
