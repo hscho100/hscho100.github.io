@@ -202,7 +202,7 @@ exclude:
   - /vendor
 
 
-collections_dir: /
+collections_dir: ""
 collections:
   docs:
     output: true
