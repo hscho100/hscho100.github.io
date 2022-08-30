@@ -201,6 +201,12 @@ exclude:
   - /docs
   - /vendor
 
+
+collections_dir: /
+collections:
+  docs:
+    output: true
+
 defaults:
   - scope:
       path: ""
