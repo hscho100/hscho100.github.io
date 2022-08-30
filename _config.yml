@@ -218,6 +218,7 @@ defaults:
     ## docs
   - scope:
       path: "_docs/en"
+      type: docs
     values:
       layout: article
       nav_key: docs
