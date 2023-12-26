@@ -79,7 +79,7 @@ header:
 
   - titles:
       # @start locale config
-      en      : &EN       Test! What About?
+      en      : &EN       About
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
@@ -109,7 +109,7 @@ header:
 docs-en:
   - title:      Start
     children:
-      - title:  Quick Starttt
+      - title:  Quick Start!
         url:    /docs/en/quick-start
       - title:  Structure
         url:    /docs/en/structure
