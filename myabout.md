@@ -25,7 +25,7 @@ titles:
   # @end locale config
 aside:
   toc: true
-key: page-about
+key: page-myabout
 ---
 
 # Hello World
