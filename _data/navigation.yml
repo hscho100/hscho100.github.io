@@ -101,7 +101,7 @@ header:
       fr-LU   : *FR
       tr      : &TR       Hakkında
       # @end locale config
-    url: /mytest.html
+    url: /myabout.html
     
   - title:      GitHub
     url:        https://github.com/hscho100
