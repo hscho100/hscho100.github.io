@@ -4,8 +4,6 @@ title: "Layout: Author Override"
 author: Hyunsoo Cho
 toc: true
 toc_sticky: true
-aside:
-  toc: true
 last_modified_at: 2018-09-10T12:32:27-04:00
 ---
 
