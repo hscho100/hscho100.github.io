@@ -243,3 +243,5 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+  - jekyll-gist
+  - jekyll-include-cache
