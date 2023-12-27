@@ -36,11 +36,11 @@ author:
   type      : person # "person" (default), "organization"
   name      : Hyunsoo Cho
   url       : 
-  avatar    : /assets/apple-touch-icon.png # path or url of avatar image (square)
+  avatar    : /assets/images/author_image.png # path or url of avatar image (square)
   bio       : I am an amazing person.
   email     : hscho100@snu.ac.kr
   facebook  : hyunsoo.cho.965 # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
-  twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
+  twitter   : HyunsoooCho # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
   weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
   googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
   telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
