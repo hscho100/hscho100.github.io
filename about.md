@@ -2,7 +2,6 @@
 layout: single
 title: "Layout: Author Override"
 author_profile: true
-author: Hyunsoo Cho
 toc: true
 aside:
   toc: true
