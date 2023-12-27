@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: article
 title: "Layout: Author Override"
 author: Hyunsoo Cho
 aside:
