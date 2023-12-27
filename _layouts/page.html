@@ -31,7 +31,6 @@ layout: base
 {%- assign _article_header_excerpt_truncate = include.excerpt_truncate | default: 200 -%}
 
 {%- if page.sidebar -%}
-{%- include sidebar.html -%}
 <div class="layout--page layout--page--sidebar clearfix js-page-root">
   <div class="page__mask d-print-none js-page-mask js-sidebar-hide"></div>
   <div class="page__viewport">
@@ -45,6 +44,7 @@ layout: base
 
       <div class="page__sidebar d-print-none">
         {%- include sidebar/toc.html -%}
+        {%- include sidebar.html -%}
       </div>
 
 {%- else -%}
