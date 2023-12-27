@@ -9,7 +9,7 @@
 @import "minimal-mistakes/mixins";
 
 /* Core CSS */
-@import "minimal-mistakes/reset";
+// @import "minimal-mistakes/reset";
 @import "minimal-mistakes/forms";
 @import "minimal-mistakes/tables";
 @import "minimal-mistakes/animations";
@@ -26,5 +26,5 @@
 
 /* Layout specific */
 @import "minimal-mistakes/sidebar";
-@import "minimal-mistakes/print";
+// @import "minimal-mistakes/print";
 /* end custom scss snippet */
