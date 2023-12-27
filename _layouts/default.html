@@ -1,7 +1,6 @@
 ---
 layout: base
 ---
-
 <!doctype html>
 <!--
   Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
@@ -10,11 +9,6 @@ layout: base
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
-  <head>
-    {% include mhead.html %}
-    {% include head/custom.html %}
-  </head>
-
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
     {% include_cached skip-links.html %}
     {% include_cached masthead.html %}
@@ -286,18 +280,11 @@ layout: base
     {%- include markdown-enhancements.html -%}
     {%- include pageview.html -%}
 
-    <div class="initial-content">
-      {{ content }}
-    </div>
-
-
     <div id="footer" class="page__footer">
       <footer>
         {% include_cached footer.html %}
       </footer>
     </div>
-
     {% include scripts.html %}
-
   </body>
 </html>
