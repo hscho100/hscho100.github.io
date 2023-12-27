@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: default
 title: "Layout: Author Override"
 author_profile: true
 author: Hyunsoo Cho
