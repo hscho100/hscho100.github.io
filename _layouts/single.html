@@ -8,8 +8,11 @@ type: single
   source0=layout.sharing source1=page.sharing -%}
 {%- assign _sharing = __return -%}
 
-<div class="layout--article">
-  {% include sidebar.html %}
+<div id="main" role="main">
+  {%- include sidebar.html -%}
+</div>
+
+<div class="layout--single">
   {%- include article/top/custom.html -%}
 
   <div class="article__content" itemprop="articleBody">{{ content }}</div>
