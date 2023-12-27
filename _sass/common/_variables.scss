@@ -268,6 +268,7 @@ $type-size-8: 0.625em !default; // ~10px
 
 $border-radius: map-get($base, border-radius);
 $global-transition: all 0.2s ease-in-out !default;
+$intro-transition: intro 0.3s both !default;
 $box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125) !default;
 
 /* notices */
