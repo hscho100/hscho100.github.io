@@ -269,3 +269,7 @@ $type-size-8: 0.625em !default; // ~10px
 $border-radius: map-get($base, border-radius);
 $global-transition: all 0.2s ease-in-out !default;
 $box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125) !default;
+
+/* notices */
+$notice-background-mix: 80% !default;
+$code-notice-background-mix: 90% !default;
