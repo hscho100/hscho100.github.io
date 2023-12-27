@@ -267,3 +267,4 @@ $type-size-7: 0.6875em !default; // ~11px
 $type-size-8: 0.625em !default; // ~10px
 
 $border-radius: map-get($base, border-radius);
+$global-transition: all 0.2s ease-in-out !default;
