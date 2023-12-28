@@ -8,14 +8,7 @@ layout: page
   {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
   {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
   {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
-  {%- if page.toc -%}
-    <div class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
-      <nav class="tocc">
-        <header><h4 class="tocc nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
-        {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
-      </nav>
-    </div>
-  {%- endif -%}
+  
   <div class="page__inner-wrap">
     <section class="page__content e-content" itemprop="text">
       {{ content }}
@@ -39,6 +32,14 @@ layout: page
     {% include comments.html %}
   {% endif %}
 </article>
+{%- if page.toc -%}
+  <div class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
+    <nav class="tocc">
+      <header><h4 class="tocc nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
+      {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
+    </nav>
+  </div>
+{%- endif -%}
 
 <script>
   {%- include scripts/article.js -%}
