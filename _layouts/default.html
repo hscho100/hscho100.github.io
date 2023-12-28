@@ -23,8 +23,18 @@
     {%- include scripts/variables.html -%}
   </head>
   <body>
+    <div class="page__main-inner">
+        <div class="page__header d-print-none">
+          {% include_cached header.html %}
+        </div>
+    </div>
     <div class="root" data-is-touch="false">
       {{ content }}
+    </div>
+    <div id="footer" class="page__footer">
+      <footer>
+        {% include_cached footer.html %}
+      </footer>
     </div>
     <script>
       {%- include scripts/common.js -%}
