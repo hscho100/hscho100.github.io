@@ -189,6 +189,16 @@ layout: base
                     {%- include aside/toc.html -%}
                   </aside>
                 {%- endif -%}
+                {%- if page.toc -%}
+                <div class="toc-aside js-toc-root">
+                  <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
+                    <nav class="tocc">
+                      <header><h4 class="tocc nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
+                      {% include toc.html sanitize=true html=content h_min=0 h_max=6 class="toc__menu" skip_no_ids=true %}
+                    </nav>
+                  </aside>
+                </div>
+                {%- endif -%}
               </div>
 
               <div class="col-main cell cell--auto">
@@ -209,14 +219,6 @@ layout: base
                   {%- include article-info.html article=page -%}
                 {%- endif -%}
                     <div class="js-article-content">
-                      {%- if page.toc -%}
-                        <div class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
-                          <nav class="tocc">
-                            <header><h4 class="tocc nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
-                            {% include toc.html sanitize=true html=content h_min=0 h_max=6 class="toc__menu" skip_no_ids=true %}
-                          </nav>
-                        </div>
-                      {%- endif -%}
                       {{ content }}
                     </div>
                     {%- if _comment != false -%}
