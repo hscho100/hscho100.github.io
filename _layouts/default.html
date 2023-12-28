@@ -28,9 +28,35 @@
           {% include_cached header.html %}
         </div>
     </div>
-    <div class="root" data-is-touch="false">
-      {{ content }}
+    <div class="grid grid--reverse">
+      <div class="col-main cell cell--auto">
+        {%- include main/top/custom.html -%}
+        {%- if _page_type == 'article' -%}
+          <article itemscope itemtype="http://schema.org/Article">
+        {%- elsif _page_type == 'webpage' -%}
+          <article itemscope itemtype="http://schema.org/WebPage">
+        {%- else -%}
+          <article>
+        {%- endif -%}
+  
+        {%- if _article_header_type == 'overlay' or page.article_header == false -%}
+          {%- include article-header.html article=page html=false -%}
+          {%- include article-info.html article=page html=false -%}
+        {%- else -%}
+          {%- include article-header.html article=page -%}
+          {%- include article-info.html article=page -%}
+        {%- endif -%}
+            <div class="root" data-is-touch="false">
+              {{ content }}
+            </div>
+            {%- if _comment != false -%}
+              <section class="page__comments d-print-none">{%- include comments.html -%}</section>
+            {%- endif -%}
+        </article>
+        {%- include main/bottom/custom.html -%}
+      </dev>
     </div>
+    
     <div id="footer" class="page__footer">
       <footer>
         {% include_cached footer.html %}
