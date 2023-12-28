@@ -681,6 +681,7 @@ html,
       color: $muted-text-color;
       font-weight: bold;
       line-height: normal;
+      border-bottom: 1px solid $border-color;
   
       &:hover {
         color: $text-color;
@@ -688,33 +689,43 @@ html,
     }
   
     li ul > li a {
+      list-style: none;
       padding: 0.25rem 1.25rem;
       font-weight: normal;
       line-height: normal;
+      border-bottom: 1px solid $border-color;
     }
   
     li ul li ul > li a {
+      list-style: none;
       padding: 0.25rem 1.75rem;
       font-weight: normal;
       line-height: normal;
+      border-bottom: 1px solid $border-color;
     }
   
     li ul li ul li ul > li a {
+      list-style: none;
       padding-left: 2.25rem;
       font-weight: normal;
       line-height: normal;
+      border-bottom: 1px solid $border-color;
     }
   
     li ul li ul li ul li ul > li a {
+      list-style: none;
       padding-left: 2.75rem;
       font-weight: normal;
       line-height: normal;
+      border-bottom: 1px solid $border-color;
     }
   
     li ul li ul li ul li ul li ul > li a {
+      list-style: none;
       padding-left: 3.25rem;
       font-weight: normal;
       line-height: normal;
+      border-bottom: 1px solid $border-color;
     }
   }
 }
