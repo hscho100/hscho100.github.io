@@ -77,7 +77,7 @@ header:
       # @end locale config
     url: /archive.html
 
-  - title:     About
+  - title:     CV
     url: /about.html
     
   - title:      GitHub
