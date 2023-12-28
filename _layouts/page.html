@@ -209,7 +209,6 @@ layout: base
                   {%- include article-info.html article=page -%}
                 {%- endif -%}
                     <div class="js-article-content">
-                      {{ content }}
                       {%- if page.toc -%}
                         <div class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
                           <nav class="tocc">
@@ -218,6 +217,7 @@ layout: base
                           </nav>
                         </div>
                       {%- endif -%}
+                      {{ content }}
                     </div>
                     {%- if _comment != false -%}
                       <section class="page__comments d-print-none">{%- include comments.html -%}</section>
