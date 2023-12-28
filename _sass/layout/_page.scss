@@ -296,7 +296,7 @@ html,
   @include breakpoint($large) {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: $right-sidebar-width-narrow;
     margin-left: -1 * $right-sidebar-width-narrow;
     padding-right: 1em;
@@ -983,14 +983,6 @@ body {
 /*
    Comments
    ========================================================================== */
-
-.page__comments {
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%;
-  clear: both;
-}
 
 .page__comments-title {
   margin-top: 2rem;
