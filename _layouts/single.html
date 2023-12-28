@@ -41,7 +41,26 @@ layout: default
   {% endif %}
 </article>
 
-
 <script>
+  {%- include scripts/lib/scroll-to.js -%}
+  {%- include scripts/lib/affix.js -%}
+  {%- include scripts/lib/toc.js -%}
   {%- include scripts/article.js -%}
+  {%- if _lightbox == true -%}
+    {%- include scripts/lib/gallery.js -%}
+    {%- include scripts/components/lightbox.js -%}
+  {%- endif -%}
+  {%- include scripts/page.js -%}
 </script>
+
+{%- if page.sidebar -%}
+<script>{%- include scripts/components/sidebar.js -%}</script>
+{%- endif -%}
+
+{%- if page.aside -%}
+<script>
+  /* toc must before affix, since affix need to konw toc' height. */
+  {%- if page.aside.toc -%}{%- include scripts/aside/toc.js -%}{%- endif -%}
+  {%- include scripts/aside/affix.js -%}
+</script>
+{%- endif -%}
