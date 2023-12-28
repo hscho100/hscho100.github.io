@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Layout: Author Override"
+title: "About"
 author_profile: true
 toc: true
 toc_sticky: true
