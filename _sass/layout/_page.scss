@@ -642,7 +642,7 @@ html,
      Table of contents navigation
      ========================================================================== */
 
-ul.tocc {
+.tocc {
   list-style-type: none;
   display: block;
   font-family: $sans-serif-narrow;
@@ -666,7 +666,7 @@ ul.tocc {
     @include yiq-contrasted($active-color);
   }
 
-  ul.toc__menu {
+  .toc__menu {
     margin: 0;
     padding: 0;
     width: 100%;
