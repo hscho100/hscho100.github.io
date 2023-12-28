@@ -4,16 +4,14 @@ layout: page
 
 {% include sidebar.html %}
 {%- if page.toc -%}
-  <aside class="page__aside js-page-aside">
-    <div class="toc-aside js-toc-root">
-      <div class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
-        <nav class="tocc">
-          <header><h4 class="tocc nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
-          {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
-        </nav>
-      </div>
+  <div class="toc-aside js-toc-root">
+    <div class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
+      <nav class="tocc">
+        <header><h4 class="tocc nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
+        {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
+      </nav>
     </div>
-  </aside>
+  </div>
 {%- endif -%}
 <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
   {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
