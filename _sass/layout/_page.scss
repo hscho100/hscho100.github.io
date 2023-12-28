@@ -265,6 +265,9 @@ html,
   }
 
   @include breakpoint($x-large) {
+    position: absolute;
+    top: 0;
+    right: 0;
     width: $right-sidebar-width;
     margin-right: -1 * $right-sidebar-width;
   }
