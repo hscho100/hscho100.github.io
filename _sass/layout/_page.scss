@@ -688,36 +688,31 @@ html,
       }
     }
   
-    li ul[list-style=none] > li a {   
-      padding: 0.25rem 1.25rem;
+    li ul[list-style=none,padding-left=1.25rem] > li a {   
       font-weight: normal;
       line-height: normal;
       border-bottom: 1px solid $border-color;
     }
   
-    li ul li ul[list-style=none] > li a {
-      padding: 0.25rem 1.75rem;
+    li ul li ul[list-style=none,padding-left=1.75rem] > li a {
       font-weight: normal;
       line-height: normal;
       border-bottom: 1px solid $border-color;
     }
   
-    li ul li ul li ul[list-style=none] > li a {
-      padding-left: 2.25rem;
+    li ul li ul li ul[list-style=none,padding-left=2.25rem] > li a {
       font-weight: normal;
       line-height: normal;
       border-bottom: 1px solid $border-color;
     }
   
-    li ul li ul li ul li ul[list-style=none] > li a {
-      padding-left: 2.75rem;
+    li ul li ul li ul li ul[list-style=none,padding-left=2.75rem] > li a {
       font-weight: normal;
       line-height: normal;
       border-bottom: 1px solid $border-color;
     }
   
-    li ul li ul li ul li ul li ul[list-style=none] > li a {
-      padding-left: 3.25rem;
+    li ul li ul li ul li ul li ul[list-style=none,padding-left=3.25rem] > li a {
       font-weight: normal;
       line-height: normal;
       border-bottom: 1px solid $border-color;
