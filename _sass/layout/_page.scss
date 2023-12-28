@@ -676,7 +676,6 @@ html,
     }
   
     li a {
-      display: block;
       padding: 0.25rem 0.75rem;
       color: $muted-text-color;
       font-weight: bold;
@@ -691,22 +690,32 @@ html,
     li ul > li a {
       padding-left: 1.25rem;
       font-weight: normal;
+      line-height: normal;
+      border-bottom: 1px solid $border-color;
     }
   
     li ul li ul > li a {
       padding-left: 1.75rem;
+      line-height: normal;
+      border-bottom: 1px solid $border-color;
     }
   
     li ul li ul li ul > li a {
       padding-left: 2.25rem;
+      line-height: normal;
+      border-bottom: 1px solid $border-color;
     }
   
     li ul li ul li ul li ul > li a {
       padding-left: 2.75rem;
+      line-height: normal;
+      border-bottom: 1px solid $border-color;
     }
   
     li ul li ul li ul li ul li ul > li a {
       padding-left: 3.25rem;
+      line-height: normal;
+      border-bottom: 1px solid $border-color;
     }
   }
 }
