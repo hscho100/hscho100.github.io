@@ -31,15 +31,6 @@ layout: default
 
 {%- assign _article_header_excerpt_truncate = include.excerpt_truncate | default: 200 -%}
 
-
-{%- if _article_header_type == 'overlay' or page.article_header == false -%}
-  {%- include article-header.html article=page html=false -%}
-  {%- include article-info.html article=page html=false -%}
-{%- else -%}
-  {%- include article-header.html article=page -%}
-  {%- include article-info.html article=page -%}
-{%- endif -%}
-
 {%- assign _header_theme = page.header.theme | default: layout.header.theme -%}
 {%- if _header_theme == 'dark'-%}
   {%- include header.html theme='dark' background=page.header.background -%}
@@ -47,6 +38,15 @@ layout: default
   {%- include header.html theme='light' background=page.header.background -%}
 {%- else -%}
   {%- include header.html -%}
+{%- endif -%}
+
+
+{%- if _article_header_type == 'overlay' or page.article_header == false -%}
+  {%- include article-header.html article=page html=false -%}
+  {%- include article-info.html article=page html=false -%}
+{%- else -%}
+  {%- include article-header.html article=page -%}
+  {%- include article-info.html article=page -%}
 {%- endif -%}
 
 <div id="main" role="main">
