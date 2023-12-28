@@ -678,59 +678,94 @@ html,
       font-size: $type-size-7;
     }
   
-    & > li a {
-      display: block;
-      padding: 0.25rem 0.75rem;
-      color: $muted-text-color;
-      font-weight: bold;
-      line-height: 1.1em;
-      border-bottom: 1px solid $border-color;
-  
-      &:hover {
-        color: $text-color;
+    ul {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      list-style-type: none;
+      > li a {
+        display: block;
+        padding: 0.25rem 0.75rem;
+        color: $muted-text-color;
+        font-weight: bold;
+        line-height: 1.1em;
+        border-bottom: 1px solid $border-color;
+    
+        &:hover {
+          color: $text-color;
+        }
       }
     }
   
-    & > li a {
-      display: block;
-      padding-left: 1.25rem;
-      font-weight: normal;
-      line-height: 1.1em;
-      border-bottom: 1px solid $border-color;
+    ul li ul {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      list-style-type: none;
+      > li a {
+        display: block;
+        padding-left: 1.25rem;
+        font-weight: normal;
+        line-height: 1.1em;
+        border-bottom: 1px solid $border-color;
+      }
     }
   
-    & > li a {
-      display: block;
-      padding-left: 1.75rem;
-      font-weight: normal;
-      line-height: 1.1em;
-      border-bottom: 1px solid $border-color;
+    ul li ul li ul {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      list-style-type: none;  
+      > li a {
+        display: block;
+        padding-left: 1.75rem;
+        font-weight: normal;
+        line-height: 1.1em;
+        border-bottom: 1px solid $border-color;
+      }
+    }
+
+    ul li ul li ul li ul {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      list-style-type: none;
+      > li a {
+        display: block;
+        padding-left: 2.25rem;
+        font-weight: normal;
+        line-height: 1.1em;
+        border-bottom: 1px solid $border-color;
+      }
     }
   
-    & > li a {
-      display: block;
-      padding-left: 2.25rem;
-      font-weight: normal;
-      line-height: 1.1em;
-      border-bottom: 1px solid $border-color;
+    ul li ul li ul li ul li ul {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      list-style-type: none;
+      > li a {
+        display: block;
+        padding-left: 2.75rem;
+        font-weight: normal;
+        line-height: 1.1em;
+        border-bottom: 1px solid $border-color;
+      }
     }
-  
-    & > li a {
-      display: block;
-      padding-left: 2.75rem;
-      font-weight: normal;
-      line-height: 1.1em;
-      border-bottom: 1px solid $border-color;
+
+    ul li ul li ul li ul li ul li ul {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      list-style-type: none;
+      > li a {
+        display: block;
+        padding-left: 3.25rem;
+        font-weight: normal;
+        line-height: 1.1em;
+        border-bottom: 1px solid $border-color;
+      }
     }
-  
-    & > li a {
-      display: block;
-      padding-left: 3.25rem;
-      font-weight: normal;
-      line-height: 1.1em;
-      border-bottom: 1px solid $border-color;
-    }
-  }
 }
 
 
