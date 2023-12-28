@@ -3,6 +3,7 @@ layout: single
 title: "Layout: Author Override"
 author_profile: true
 toc: true
+toc_sticky: true
 last_modified_at: 2018-09-10T12:32:27-04:00
 ---
 
