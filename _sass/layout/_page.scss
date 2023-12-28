@@ -172,14 +172,7 @@ html,
 @import "../minimal-mistakes/mixins";
 
 .sidebar {
-  @include clearfix();
-  // @include breakpoint(max-width $large) {
-  //   /* fix z-index order of follow links */
-  //   position: relative;
-  //   z-index: 10;
-  //   -webkit-transform: translate3d(0, 0, 0);
-  //   transform: translate3d(0, 0, 0);
-  // }
+  margin-bottom: 1em;
 
   @include breakpoint($large) {
     float: left;
@@ -193,11 +186,11 @@ html,
     }
 
     &.sticky {
-      overflow-y: auto;
-      /* calculate height of nav list
-         viewport height - nav height - masthead x-padding
-      */
-      max-height: calc(100vh - #{$nav-height} - 2em);
+      @include clearfix();
+      position: -webkit-sticky;
+      position: sticky;
+      top: 2em;
+      float: right;
     }
   }
 
