@@ -94,6 +94,10 @@ layout: default
   </article>
 </div>
 
+{%- if _header != false -%}
+  <div class="modal modal--overflow page__search-modal d-print-none js-page-search-modal">{%- include search.html -%}</div>
+{%- endif -%}
+
 <script>
   {%- include scripts/lib/scroll-to.js -%}
   {%- include scripts/lib/affix.js -%}
