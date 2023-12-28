@@ -47,7 +47,24 @@ layout: base
       </div>
       
 {%- else -%}
-<div class="layout--page js-page-root">
+{%- if page.toc -%}
+<div class="layout--page layout--page--sidebar clearfix js-page-root">
+  <div class="page__mask d-print-none js-page-mask js-sidebar-hide"></div>
+  <div class="page__viewport">
+    <div class="page__actions d-print-none">
+      <div class="button button--circle button--lg box-shadow-2 sidebar-button js-sidebar-show">
+        <i class="fas fa-bars icon--show"></i>
+      </div>
+    </div>
+
+    <div class="grid page__grid">
+
+      <div class="page__sidebar d-print-none">
+        {%- include sidebar/toc.html -%}
+      </div>
+{%- else -%}
+  <div class="layout--page js-page-root">
+{%- endif -%}
 {%- endif -%}
 
     {%- assign _page_main_class = 'page__main js-page-main' -%}
