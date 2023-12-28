@@ -21,13 +21,7 @@ layout: page
 
 {% include sidebar.html %}
 
-
-<article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-  {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-  {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-  {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
-  {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
-<aside class="page__aside js-page-aside" style="left: 0px; top: 0px;">
+<div class="col-aside d-print-none js-col-aside"><aside class="page__aside js-page-aside" style="left: 0px; top: 0px;">
   {% if page.toc %}
     <div class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
       <nav class="toc">
@@ -36,7 +30,14 @@ layout: page
       </nav>
     </div>
   {% endif %}
-</aside>
+</aside></div>
+
+<article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+  {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+  {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+  {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+  {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
+
   <div class="page__inner-wrap">
     <section class="page__content e-content" itemprop="text">
       {{ content }}
