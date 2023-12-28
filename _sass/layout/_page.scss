@@ -688,35 +688,35 @@ html,
       }
     }
   
-    li ul{list-style: none;} > li a {   
+    li ul[list-style=none] > li a {   
       padding: 0.25rem 1.25rem;
       font-weight: normal;
       line-height: normal;
       border-bottom: 1px solid $border-color;
     }
   
-    li ul li ul{list-style: none;} > li a {
+    li ul li ul[list-style=none] > li a {
       padding: 0.25rem 1.75rem;
       font-weight: normal;
       line-height: normal;
       border-bottom: 1px solid $border-color;
     }
   
-    li ul li ul li ul{list-style: none;} > li a {
+    li ul li ul li ul[list-style=none] > li a {
       padding-left: 2.25rem;
       font-weight: normal;
       line-height: normal;
       border-bottom: 1px solid $border-color;
     }
   
-    li ul li ul li ul li ul{list-style: none;} > li a {
+    li ul li ul li ul li ul[list-style=none] > li a {
       padding-left: 2.75rem;
       font-weight: normal;
       line-height: normal;
       border-bottom: 1px solid $border-color;
     }
   
-    li ul li ul li ul li ul li ul{list-style: none;} > li a {
+    li ul li ul li ul li ul li ul[list-style=none] > li a {
       padding-left: 3.25rem;
       font-weight: normal;
       line-height: normal;
