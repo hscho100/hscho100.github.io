@@ -642,7 +642,9 @@ html,
      Table of contents navigation
      ========================================================================== */
 
-.tocc {
+ul.tocc {
+  list-style-type: none;
+  display: block;
   font-family: $sans-serif-narrow;
   color: $gray;
   background-color: $background-color;
@@ -650,7 +652,6 @@ html,
   border-radius: $border-radiuss;
   -webkit-box-shadow: $box-shadow;
   box-shadow: $box-shadow;
-  list-style: none;
 
   .nav__title {
     color: #fff;
@@ -665,11 +666,11 @@ html,
     @include yiq-contrasted($active-color);
   }
 
-  .toc__menu {
+  ul.toc__menu {
     margin: 0;
     padding: 0;
     width: 100%;
-    list-style: none;
+    list-style-type: none;
     font-size: $type-size-6;
     display: block;
   
@@ -677,7 +678,7 @@ html,
       font-size: $type-size-7;
     }
   
-    li a {
+    & > li a {
       display: block;
       padding: 0.25rem 0.75rem;
       color: $muted-text-color;
@@ -690,7 +691,7 @@ html,
       }
     }
   
-    ul > li a {
+    & > li a {
       display: block;
       padding-left: 1.25rem;
       font-weight: normal;
@@ -698,7 +699,7 @@ html,
       border-bottom: 1px solid $border-color;
     }
   
-    ul li ul > li a {
+    & > li a {
       display: block;
       padding-left: 1.75rem;
       font-weight: normal;
@@ -706,7 +707,7 @@ html,
       border-bottom: 1px solid $border-color;
     }
   
-    ul li ul li ul > li a {
+    & > li a {
       display: block;
       padding-left: 2.25rem;
       font-weight: normal;
@@ -714,7 +715,7 @@ html,
       border-bottom: 1px solid $border-color;
     }
   
-    ul li ul li ul li ul > li a {
+    & > li a {
       display: block;
       padding-left: 2.75rem;
       font-weight: normal;
@@ -722,7 +723,7 @@ html,
       border-bottom: 1px solid $border-color;
     }
   
-    ul li ul li ul li ul li ul > li a {
+    & > li a {
       display: block;
       padding-left: 3.25rem;
       font-weight: normal;
