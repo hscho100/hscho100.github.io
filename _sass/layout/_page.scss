@@ -650,6 +650,7 @@ html,
   border-radius: $border-radiuss;
   -webkit-box-shadow: $box-shadow;
   box-shadow: $box-shadow;
+  list-style: none;
 
   .nav__title {
     color: #fff;
@@ -670,12 +671,14 @@ html,
     width: 100%;
     list-style: none;
     font-size: $type-size-6;
+    display: block;
   
     @include breakpoint($large) {
       font-size: $type-size-7;
     }
   
     li a {
+      display: block;
       padding: 0.25rem 0.75rem;
       color: $muted-text-color;
       font-weight: bold;
@@ -688,6 +691,7 @@ html,
     }
   
     li ul > li a {
+      display: block;
       padding-left: 1.25rem;
       font-weight: normal;
       line-height: normal;
@@ -695,25 +699,33 @@ html,
     }
   
     li ul li ul > li a {
+      display: block;
       padding-left: 1.75rem;
+      font-weight: normal;
       line-height: normal;
       border-bottom: 1px solid $border-color;
     }
   
     li ul li ul li ul > li a {
+      display: block;
       padding-left: 2.25rem;
+      font-weight: normal;
       line-height: normal;
       border-bottom: 1px solid $border-color;
     }
   
     li ul li ul li ul li ul > li a {
+      display: block;
       padding-left: 2.75rem;
+      font-weight: normal;
       line-height: normal;
       border-bottom: 1px solid $border-color;
     }
   
     li ul li ul li ul li ul li ul > li a {
+      display: block;
       padding-left: 3.25rem;
+      font-weight: normal;
       line-height: normal;
       border-bottom: 1px solid $border-color;
     }
