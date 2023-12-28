@@ -86,6 +86,9 @@ layout: default
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
+      {%- if _comment != false -%}
+      <section class="page__comments d-print-none">{%- include comments.html -%}</section>
+      {%- endif -%}
     </div>
  
   </article>
