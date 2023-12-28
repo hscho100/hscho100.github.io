@@ -40,15 +40,6 @@ layout: default
   {%- include header.html -%}
 {%- endif -%}
 
-
-{%- if _article_header_type == 'overlay' or page.article_header == false -%}
-  {%- include article-header.html article=page html=false -%}
-  {%- include article-info.html article=page html=false -%}
-{%- else -%}
-  {%- include article-header.html article=page -%}
-  {%- include article-info.html article=page -%}
-{%- endif -%}
-
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
 {% elsif page.header.video.id and page.header.video.provider %}
