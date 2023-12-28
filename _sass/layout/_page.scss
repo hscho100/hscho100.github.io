@@ -675,14 +675,12 @@ html,
       font-size: $type-size-7;
     }
   
-    a {
+    li a {
       display: block;
       padding: 0.25rem 0.75rem;
       color: $muted-text-color;
       font-weight: bold;
       line-height: normal;
-      border-bottom: 1px solid $border-color;
-      list-style: none;
   
       &:hover {
         color: $text-color;
@@ -693,103 +691,34 @@ html,
       padding: 0.25rem 1.25rem;
       font-weight: normal;
       line-height: normal;
-      border-bottom: 1px solid $border-color;
-      list-style: none;
-      list-style-position: inside;
     }
   
     li ul li ul > li a {
       padding: 0.25rem 1.75rem;
       font-weight: normal;
       line-height: normal;
-      border-bottom: 1px solid $border-color;
-      list-style: none;
-      list-style-position: inside;
     }
   
     li ul li ul li ul > li a {
       padding-left: 2.25rem;
       font-weight: normal;
       line-height: normal;
-      border-bottom: 1px solid $border-color;
-      list-style: none;
-      list-style-position: inside;
     }
   
     li ul li ul li ul li ul > li a {
       padding-left: 2.75rem;
-      list-style: none;
+      font-weight: normal;
+      line-height: normal;
     }
   
     li ul li ul li ul li ul li ul > li a {
       padding-left: 3.25rem;
-      list-style: none;
+      font-weight: normal;
+      line-height: normal;
     }
   }
 }
 
-.toc__menu {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  list-style: none;
-  font-size: $type-size-6;
-
-  @include breakpoint($large) {
-    font-size: $type-size-7;
-  }
-
-  a {
-    display: block;
-    padding: 0.25rem 0.75rem;
-    color: $muted-text-color;
-    font-weight: bold;
-    line-height: normal;
-    border-bottom: 1px solid $border-color;
-    list-style: none;
-
-    &:hover {
-      color: $text-color;
-    }
-  }
-
-  li ul > li a {
-    padding: 0.25rem 1.25rem;
-    font-weight: normal;
-    line-height: normal;
-    border-bottom: 1px solid $border-color;
-    list-style: none;
-    list-style-position: inside;
-  }
-
-  li ul li ul > li a {
-    padding: 0.25rem 1.75rem;
-    font-weight: normal;
-    line-height: normal;
-    border-bottom: 1px solid $border-color;
-    list-style: none;
-    list-style-position: inside;
-  }
-
-  li ul li ul li ul > li a {
-    padding-left: 2.25rem;
-    font-weight: normal;
-    line-height: normal;
-    border-bottom: 1px solid $border-color;
-    list-style: none;
-    list-style-position: inside;
-  }
-
-  li ul li ul li ul li ul > li a {
-    padding-left: 2.75rem;
-    list-style: none;
-  }
-
-  li ul li ul li ul li ul li ul > li a {
-    padding-left: 3.25rem;
-    list-style: none;
-  }
-}
 
 #main {
   @include clearfix;
