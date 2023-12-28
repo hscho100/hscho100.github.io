@@ -692,7 +692,7 @@ html,
       }
     
   
-    li ul li a {
+    li ul > li a {
         display: block;
         padding-left: 1.25rem;
         font-weight: normal;
@@ -700,7 +700,7 @@ html,
         border-bottom: 1px solid $border-color;
     }
   
-    li ul li ul li a {
+    li ul li ul > li a {
         display: block;
         padding-left: 1.75rem;
         font-weight: normal;
@@ -708,7 +708,7 @@ html,
         border-bottom: 1px solid $border-color;
     }
 
-    li ul li ul li ul li a {
+    li ul li ul li ul > li a {
         display: block;
         padding-left: 2.25rem;
         font-weight: normal;
@@ -716,7 +716,7 @@ html,
         border-bottom: 1px solid $border-color;
     }
   
-    li ul li ul li ul li ul li a {
+    li ul li ul li ul li ul > li a {
         display: block;
         padding-left: 2.75rem;
         font-weight: normal;
@@ -724,7 +724,7 @@ html,
         border-bottom: 1px solid $border-color;
     }
 
-    li ul li ul li ul li ul li ul li a {
+    li ul li ul li ul li ul li ul > li a {
         display: block;
         padding-left: 3.25rem;
         font-weight: normal;
