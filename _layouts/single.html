@@ -95,7 +95,7 @@ layout: default
 </div>
 
 {%- if _header != false -%}
-  {%- include search.html -%}
+  <div class="modal modal--overflow page__search-modal d-print-none js-page-search-modal">{%- include search.html -%}</div>
 {%- endif -%}
 
 <script>
