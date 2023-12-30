@@ -831,6 +831,7 @@ body {
 .page__title {
   margin-top: 0;
   line-height: 1;
+  margin-bottom: revert;
 
   a {
     color: $text-color;
