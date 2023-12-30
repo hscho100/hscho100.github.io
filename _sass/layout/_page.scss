@@ -705,6 +705,10 @@ html,
     font-size: $type-size-7;
   }
 
+  ul {
+    list-style-type: none;
+  }
+
   a {
       display: block;
       padding: 0.25rem 0.75rem;
