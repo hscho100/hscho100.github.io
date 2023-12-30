@@ -35,8 +35,6 @@ timezone: Asia/Seoul # see https://en.wikipedia.org/wiki/List_of_tz_database_tim
 author:
   type      : person # "person" (default), "organization"
   name      : Hyunsoo Cho
-  location  : Seoul, South Korea
-  uri       : blog.naver.com/hscho100
   url       : 
   avatar    : /assets/images/author_image.png # path or url of avatar image (square)
   bio       : I am an amazing person.
@@ -52,7 +50,9 @@ author:
   linkedin  : hyunsoo-cho-82569478 # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
   github    : hscho100 # "user_name" the last part of your profile url, e.g. https://github.com/user_name
   instagram : hyunsooo_cho
-  youtube   : @namAmugae
+  youtube   : "@namAmugae"
+  location  : "Seoul, South Korea"
+  uri       : blog.naver.com/hscho100
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
