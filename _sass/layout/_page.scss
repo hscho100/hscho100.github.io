@@ -633,6 +633,14 @@ html,
   font-weight: bold;
 }
 
+.navv__title {
+  margin: 0;
+  padding: 0rem 0.75rem;
+  font-family: $sans-serif-narrow;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
 .nav__sub-title {
   display: block;
   margin: 0.5rem 0;
@@ -659,12 +667,24 @@ html,
   -webkit-box-shadow: $box-shadow;
   box-shadow: $box-shadow;
 
-  .nav__title {
+  .navv__title {
     color: #fff;
-    font-size: $type-size-6;
+    font-size: 0.85em;
     background: $primary-color;
     border-top-left-radius: $border-radiuss;
     border-top-right-radius: $border-radiuss;
+  }
+
+  .nav__sub-title {
+    display: block;
+    list-style-type: none;
+    margin: 0rem 0;
+    padding: 0.25rem 0;
+    font-family: $sans-serif-narrow;
+    font-size: $type-size-6;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid $border-color;
   }
 
   // Scrollspy marks toc items as .active when they are in focus
@@ -692,6 +712,7 @@ html,
       font-weight: bold;
       line-height: 1.1em;
       border-bottom: 1px solid $border-color;
+      font-size: 1.05em;
   
       &:hover {
         color: $text-color;
