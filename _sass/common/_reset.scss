@@ -11,7 +11,9 @@
   figure,
   pre,
   .highlighter-rouge,
-  ul,
+  ul {
+    list-style-type: none;
+  },
   ol,
   dl,
   table,
