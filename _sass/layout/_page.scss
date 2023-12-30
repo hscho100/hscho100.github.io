@@ -215,7 +215,7 @@ html,
   p,
   li {
     font-family: $sans-serif;
-    font-size: $type-size-4;
+    font-size: 0.85em;
     line-height: 1.5;
   }
 
@@ -409,6 +409,11 @@ html,
     margin-bottom: 20px;
   }
 }
+.sidebar .author__bio {
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+}
+
 
 .author__urls-wrapper {
   position: relative;
@@ -539,8 +544,8 @@ html,
     padding-top: 2px;
     padding-bottom: 2px;
     color: inherit;
-    font-size: $type-size-4;
-    font-weight: 550;
+    font-size: $type-size-5;
+    font-weight: 350;
     text-decoration: none;
 
     &:hover {
