@@ -172,7 +172,7 @@ html,
 @import "../minimal-mistakes/mixins";
 
 .sidebar {
-  margin-bottom: 1em;
+  margin-bottom: -1em;
 
   @include breakpoint($large) {
     float: left;
