@@ -41,6 +41,7 @@
 html {
   font-size: map-get($base, font-size-root);
   -webkit-text-size-adjust: 100%; /* 1 */
+  text-size-adjust: 100%;
   @media print {
     font-size: map-get($base, font-size-root-sm);
   }
