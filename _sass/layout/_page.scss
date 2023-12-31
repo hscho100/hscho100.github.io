@@ -252,6 +252,7 @@ html,
         .toc__menu {
           overflow-y: auto;
           max-height: calc(100vh - 7em);
+          font-size: small;
         }
       }
     }
@@ -434,7 +435,7 @@ html,
       padding-left: 5px;
     }
     span.p-locality {
-      padding-left: 5px;
+      padding-left: 1px;
     }
   }
 
@@ -538,6 +539,8 @@ html,
 
   li {
     white-space: nowrap;
+    margin-bottom: 3px;
+    padding-right: 5px;
   }
 
   a {
@@ -548,7 +551,7 @@ html,
     padding-bottom: 0px;
     color: inherit;
     font-size: $type-size-5;
-    font-weight: 350;
+    font-weight: 370;
     text-decoration: none;
 
     &:hover {
