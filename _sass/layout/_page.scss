@@ -433,6 +433,9 @@ html,
     span.label {
       padding-left: 5px;
     }
+    span.p-locality {
+      padding-left: 5px;
+    }
   }
 
   @include breakpoint($large) {
@@ -539,10 +542,10 @@ html,
 
   a {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     color: inherit;
     font-size: $type-size-5;
     font-weight: 350;
