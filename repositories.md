@@ -7,6 +7,8 @@ description: Edit the `_data/repositories.yml` and change the "github_users" and
 
 ## GitHub users
 
+wow nae `test wow nn.Linear`
+
 {% if site.data.repositories.github_users %}
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for user in site.data.repositories.github_users %}
