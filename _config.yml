@@ -211,6 +211,8 @@ exclude:
   - /test
   - /docs
   - /vendor
+  - jekyll-text-theme.gemspec
+  - Gemfile
 
 
 
