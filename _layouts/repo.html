@@ -35,6 +35,14 @@ layout: repodefault
   </article> -->
 </div>
 
+<script>{%- include scripts/lib/modal.js -%}</script>
+{%- if _lightbox == true -%}
+  <div class="modal d-print-none js-page-gallery-modal"><div class="gallery"></div></div>
+{%- endif -%}
+{%- if _header != false -%}
+  <div class="modal modal--overflow page__search-modal d-print-none js-page-search-modal">{%- include search.html -%}</div>
+{%- endif -%}
+
 {%- if page.aside -%}
 <script>
   /* toc must before affix, since affix need to konw toc' height. */
