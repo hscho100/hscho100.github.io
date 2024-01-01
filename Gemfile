@@ -15,7 +15,7 @@ group :jekyll_plugins do
     gem 'jekyll-jupyter-notebook'
     gem 'jekyll-link-attributes'
     gem 'jekyll-minifier'
-    gem 'jekyll-paginate-v2'
+    gem 'jekyll-paginate'
     gem 'jekyll-scholar'
     gem 'jekyll-sitemap'
     gem 'jekyll-toc'
