@@ -30,6 +30,7 @@
 
 .modal {
   @include modal();
+  display: block;
 }
 .modal--show {
   @include modal--show();
