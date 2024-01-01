@@ -33,7 +33,7 @@ wow nae `test wow nn.Linear`
 {% endif %}
 {% endif %}
 
-<br></br>
+<br>
 
 ## GitHub Repositories
 
