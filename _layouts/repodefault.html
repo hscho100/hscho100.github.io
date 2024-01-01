@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
   <head>
+    {% include scripts/jquery.html %}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3966854664356757"
      crossorigin="anonymous"></script>
     <meta name="google-site-verification" content="vOW9H2TnlGcn6zDSbvQhEv_GVZbfZghxLT-EWe9FgX4" />
@@ -73,8 +74,7 @@
         {{ content }}
       {% endif %}
     </div>
-    {% include scripts/jquery.html %}
-    {% include scripts/bootstrap.html %}
+        
     {%- include main/bottom/custom.html -%}
     <div id="footer" class="page__footer">
       <footer>
@@ -83,7 +83,7 @@
     </div>
     {%- include scripts.html -%}
     <!-- JavaScripts -->
-    
+    {% include scripts/bootstrap.html %}
     {% include scripts/masonry.html %}
     {% include scripts/misc.html %}
     {% include scripts/badges.html %}
