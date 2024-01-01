@@ -220,7 +220,7 @@ exclude:
 ##############################
 plugins:
   - jekyll-feed
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-sitemap
   - jemoji
   - jekyll-gist
