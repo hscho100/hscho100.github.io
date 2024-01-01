@@ -6,6 +6,7 @@ group :jekyll_plugins do
     gem 'classifier-reborn'
     gem 'jekyll'
     gem 'jekyll-gist'
+    gem 'jekyll-include-cache'
     gem 'jekyll-archives'
     gem 'jekyll-diagrams'
     gem 'jekyll-email-protect'
