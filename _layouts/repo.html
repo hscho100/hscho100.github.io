@@ -1,5 +1,5 @@
 ---
-layout: repodefault
+layout: default
 ---
 <!-- page.html -->
 <div class="post">
@@ -21,7 +21,7 @@ layout: repodefault
   </div>
   {%- endif %}
 
-  {%- if site.giscus and page.giscus_comments -%}
-    {% include giscus.html %}
+  {%- if _comment != false -%}
+    <section class="page__comments d-print-none">{%- include comments.html -%}</section>
   {%- endif -%}
 </div>
