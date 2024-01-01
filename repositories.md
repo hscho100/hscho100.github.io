@@ -1,8 +1,8 @@
 ---
 layout: repo
 permalink: /repositories/
-title: Repositories
-description: Edit the ```_data/repositories.yml``` and change the "github_users" and "github_repos" lists to include your own GitHub profile and repositories.
+title: Repository
+description: This repository site is under construction.
 ---
 
 ## GitHub users
@@ -32,6 +32,9 @@ wow nae `test wow nn.Linear`
 {% endfor %}
 {% endif %}
 {% endif %}
+
+
+  
 
 ## GitHub Repositories
 
