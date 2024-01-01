@@ -26,7 +26,7 @@ layout: repodefault
     {% include breadcrumbs.html %}
   {% endunless %}
 {% endif %}
-<div id="main" role="main">
+<div class="post">
  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
@@ -42,18 +42,9 @@ layout: repodefault
           {% include page__meta.html %}
         </header>
       {% endunless %}
-      <section class="page__content e-content" itemprop="text">
-        {%- if page.toc -%}
-          <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
-            <nav class="tocc">
-              <header><h4 class="tocc navv__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "Curriculum Vitae" }}</h4></header>
-              {% include toc.html sanitize=true html=content h_min=1 h_max=3 class="toc__menu" skip_no_ids=true %}
-            </nav>
-          </aside>
-        {%- endif -%}
+      <article>
         {{ content }}
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-      </section>
+      </article>
       {%- if _comment != false -%}
       <section class="page__comments d-print-none">{%- include comments.html -%}</section>
       {%- endif -%}
