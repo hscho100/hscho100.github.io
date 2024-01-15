@@ -1,7 +1,7 @@
 header:
   - titles:
       # @start locale config
-      en      : &EN       Home
+      en      : &EN       🏠Home
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
@@ -27,7 +27,7 @@ header:
     
   - titles:
       # @start locale config
-      en      : &EN       Archive
+      en      : &EN       🗂️Archive
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
@@ -53,7 +53,7 @@ header:
 
   - titles:
       # @start locale config
-      en      : &EN       Docs
+      en      : &EN       ✏️Docs
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
@@ -77,13 +77,13 @@ header:
       # @end locale config
     url: /docs/en/quick-start
 
-  - title:     Repository
+  - title:     🗄️Repository
     url: /repositories
 
-  - title:     CV
+  - title:     🧑🏻‍💻CV
     url: /about.html
     
-  - title:      GitHub
+  - title:      ⌨️GitHub
     url:        https://github.com/hscho100
     
 docs-en:
