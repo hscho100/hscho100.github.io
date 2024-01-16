@@ -77,7 +77,7 @@ header:
       # @end locale config
     url: /docs/en/quick-start
 
-  - title:     🗄️Repository
+  - title:     🗄️Repos
     url: /repositories
 
   - title:     🧑🏻‍💻CV
